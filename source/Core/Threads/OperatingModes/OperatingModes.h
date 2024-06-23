@@ -31,7 +31,8 @@ enum OperatingMode {
   boost     = 2,
   sleeping  = 3,
   settings  = 4,
-  debug     = 5
+  debug     = 5,
+  badapple  = 6
 };
 
 // Main functions
@@ -45,6 +46,7 @@ void showPDDebug(void);                                            // Debugging 
 void showWarnings(void);                                           // Shows user warnings if required
 void drawHomeScreen(bool buttonLockout) __attribute__((noreturn)); // IDLE / Home screen
 void renderHomeScreenAssets(void);                                 // Called to act as start delay and used to render out flipped images for home screen graphics
+void showBadApple(void);				   // Show bad apple animation
 
 // Common helpers
 int8_t            getPowerSourceNumber(void); // Returns number ID of power source

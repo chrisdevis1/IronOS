@@ -43,6 +43,9 @@ void handleButtons(bool *buttonLockout) {
     // In multi-language this might be used to reset language on a long hold
     // or some such
     break;
+  case BUTTON_BOTH_LONG:
+    showBadApple(); // show bad apple animation
+    break;
 
   case BUTTON_B_LONG:
     // Show the version information
